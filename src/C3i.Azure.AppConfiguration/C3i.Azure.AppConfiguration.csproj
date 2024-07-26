@@ -8,11 +8,31 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Title>C3i.Azure.AppConfiguration</Title>
     <Authors>Diogo Costa</Authors>
+    <Description>Biblioteca para facilitar a conexão e uso do Azure App Configuration em aplicações .NET 8</Description>
+    <PackageId>C3i.Azure.AppConfiguration</PackageId>
+    <Version>1.0.2</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/diogocostadev/C3i.Azure.AppConfiguration</RepositoryUrl>
+    <PackageTags>Azure;Configuration;AppConfiguration;.NET</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>O Nome do Projeto agora é recuperado automaticamente, sem a necessidade de informar quando for iniciar as variáveis de ambiente. </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="7.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>true</Pack>
+      <PackagePath>README.md</PackagePath>
+    </None>
+    <None Include="LICENSE.txt">
+      <Pack>true</Pack>
+      <PackagePath>LICENSE.txt</PackagePath>
+    </None>
   </ItemGroup>
   
 </Project>
